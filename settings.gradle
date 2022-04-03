@@ -8,4 +8,4 @@
  */
 
 rootProject.name = 'java-tracing-practice'
-include('app')
+include('client-service', 'server-service')

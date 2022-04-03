@@ -1,0 +1,15 @@
+plugins {
+	id 'org.springframework.boot' version '2.6.6'
+	id 'io.spring.dependency-management' version '1.0.11.RELEASE'
+	id 'tracing.java-conventions'
+}
+
+dependencies {
+	implementation 'org.springframework.boot:spring-boot-starter'
+	implementation 'io.zipkin.reporter2:zipkin-reporter-brave:2.16.3'
+	implementation 'io.zipkin.reporter2:zipkin-sender-okhttp3:2.16.3'
+	implementation 'io.zipkin.brave:brave:5.13.7'
+	implementation 'io.zipkin.brave:brave-instrumentation-http:5.13.7'
+	implementation 'io.zipkin.brave:brave-instrumentation-okhttp3:5.13.7'
+	implementation 'com.squareup.okhttp3:okhttp:3.14.9'
+}
